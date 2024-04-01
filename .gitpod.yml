@@ -1,0 +1,12 @@
+# This .gitpod.yml file configures Gitpod to run TestNG Selenium Java tests.
+
+tasks:
+  - name: Install dependencies
+    command: |
+      sdk install java 11.0.15-open
+      sdk install maven
+      sdk install gradle
+
+  - name: Run tests
+    command: |
+      mvn clean test
